@@ -63,7 +63,7 @@ def build_pipeline(num_feats, cat_feats):
         ])
         cat_pipe = Pipeline([
             ('impute', SimpleImputer(strategy='most_frequent')),
-            ('encode',OneHotEncoder(handle_unknown='ignore', sparse=False))
+            ('encode',OneHotEncoder(handle_unknown='ignore', sparse_output=False))
         ])
 
         preprocessor = ColumnTransformer([
@@ -78,9 +78,15 @@ def build_pipeline(num_feats, cat_feats):
         return pipe
 
     except Exception as e:
-        raise CustomException(e)    
+        raise CustomException(e)        
     
 def run_train():
+    import sklearn
+    import sys
+    print("\n--- TRAINING ENVIRONMENT ---")
+    print(f"Scikit-learn version: {sklearn.__version__}")
+    print(f"Python executable: {sys.executable}")
+    print("--------------------------\n")
     try:
         logging.info("Implementing the Grid_Search_CV.")
         df = load_data()
