@@ -1,0 +1,57 @@
+,0
+contract_len,0.522422
+tenure,0.25625613
+InternetService_Fiber optic,0.22052601
+OnlineSecurity_No,0.21390408
+Contract_Month-to-month,0.17402719
+MonthlyCharges,0.16288762
+TechSupport_No,0.14123036
+pay_echeck,0.11067412
+TotalCharges,0.07323227
+PaperlessBilling_No,0.06859857
+lifetime_change,0.061671905
+MultipleLines_No,0.054037943
+Contract_Two year,0.050486002
+OnlineBackup_No,0.05031331
+PaymentMethod_Electronic check,0.04697844
+tenure_bucket_0-6,0.04606893
+StreamingMovies_Yes,0.03813702
+PaperlessBilling_Yes,0.036508035
+StreamingTV_Yes,0.03650619
+Dependents_No,0.021909188
+SeniorCitizen,0.020026352
+InternetService_DSL,0.01920463
+no_internet,0.013703293
+tenure_bucket_49-72,0.011926107
+StreamingMovies_No,0.011702827
+num_services,0.011547882
+MultipleLines_Yes,0.011285448
+StreamingTV_No,0.008542721
+Dependents_Yes,0.006964658
+Contract_One year,0.006860159
+MultipleLines_No phone service,0.0053627696
+gender_Female,0.004834066
+InternetService_No,0.003954758
+TechSupport_Yes,0.0037938452
+DeviceProtection_No,0.0033886498
+OnlineSecurity_Yes,0.0031706623
+OnlineBackup_Yes,0.0031526685
+PhoneService_No,0.0027748113
+DeviceProtection_No internet service,0.0024913389
+DeviceProtection_Yes,0.0013181099
+PaymentMethod_Mailed check,0.0010810759
+PhoneService_Yes,0.0010020508
+PaymentMethod_Credit card (automatic),0.0009142405
+PaymentMethod_Bank transfer (automatic),0.00087056175
+gender_Male,0.0008616044
+tenure_bucket_7-12,0.00075782946
+tenure_bucket_13-24,0.00069560535
+Partner_No,0.0006713803
+Partner_Yes,0.00062417734
+tenure_bucket_25-48,0.00033515814
+flag_totalcharges_missing,0.0
+OnlineSecurity_No internet service,0.0
+OnlineBackup_No internet service,0.0
+TechSupport_No internet service,0.0
+StreamingMovies_No internet service,0.0
+StreamingTV_No internet service,0.0
