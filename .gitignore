@@ -1,2 +1,54 @@
-/.venv
-/logs
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pym
+*.pyt
+*.pdb
+*.egg
+*.egg-info/
+dist/
+build/
+*.log
+
+# Virtual environment
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# FastAPI / Templates / Static
+*.db
+*.sqlite3
+*.sqlite
+*.csv
+*.tsv
+*.json
+*.pickle
+*.pkl
+
+# IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Pytest / Coverage
+htmlcov/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+pytest_cache/
+.pytest_cache/
+
+# Node modules (if using any frontend packages)
+node_modules/

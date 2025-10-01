@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Churn Prediction Form</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            text-align: center;
+            padding: 40px;
+        }
+        form {
+            background: #fff;
+            padding: 30px;
+            width: 400px;
+            margin: auto;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+        label { display: block; text-align: left; margin: 10px 0 4px; font-weight: bold; color: #333; }
+        input, select {
+            width: 90%; padding: 10px; margin: 8px 0 16px;
+            border: 1px solid #ccc; border-radius: 8px; font-size: 14px;
+        }
+        button {
+            padding: 12px 18px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+        button:hover { background: linear-gradient(135deg, #5a67d8, #6b46c1); }
+
+        @media screen and (max-width: 480px) {
+            body {
+                padding: 20px;
+            }
+            form {
+                width: 90%;
+                padding: 20px;
+            }
+            .card, .result {
+                width: 95%;
+                padding: 20px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            h2 {
+                font-size: 18px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2 style="color:white;">✨ Telco Customer Churn Prediction ✨</h2>
+    <form action="/submit" method="post">
+        <label>Gender</label>
+        <select name="gender">
+            <option>Male</option>
+            <option>Female</option>
+        </select>
+
+        <label>Tenure (Months)</label>
+        <input type="number" name="tenure" placeholder="Enter tenure (months)" required>
+
+        <label>Monthly Charges</label>
+        <input type="number" step="0.01" name="MonthlyCharges" placeholder="Enter monthly charges in $" required>
+
+        <label>Total Charges</label>
+        <input type="number" step="0.01" name="TotalCharges" placeholder="Enter total charges in $" required>
+
+        <label>Contract</label>
+        <select name="Contract">
+            <option>Month-to-month</option>
+            <option>One year</option>
+            <option>Two year</option>
+        </select>
+
+        <label>Payment Method</label>
+        <select name="PaymentMethod">
+            <option>Electronic check</option>
+            <option>Mailed check</option>
+            <option>Bank transfer (automatic)</option>
+            <option>Credit card (automatic)</option>
+        </select>
+
+        <label>Internet Service</label>
+        <select name="InternetService">
+            <option>DSL</option>
+            <option>Fiber optic</option>
+            <option>No</option>
+        </select>
+
+        <button type="submit">🚀 Predict</button>
+    </form>
+</body>
+</html>
